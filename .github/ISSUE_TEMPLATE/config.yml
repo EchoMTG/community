@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/EchoMTG/community/discussions
+    about: Ask questions, share strategies, chat with other users. Not a bug? Not a feature request? Start a discussion.
+  - name: Account / billing support
+    url: mailto:support@echomtg.com
+    about: Anything private — subscription issues, account recovery, data deletion, etc.
+  - name: EchoMTG API docs
+    url: https://www.echomtg.com/api/
+    about: Reference for auth, endpoints, and response shapes.

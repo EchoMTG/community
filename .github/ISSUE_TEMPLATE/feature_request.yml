@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest a new feature or improvement
+title: "[Feature] "
+labels: ["feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea for EchoMTG? Drop it here. Even rough sketches are welcome — we'd rather have the idea than lose it.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem or opportunity?
+      description: What are you trying to do that EchoMTG doesn't currently help with?
+      placeholder: "When I'm tracking boxes I open from a booster case, I have to manually..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would the feature look like?
+      description: How would you want it to work? Screenshots, sketches, and examples from other tools all welcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds you've tried
+      placeholder: "Right now I'm using a spreadsheet alongside EchoMTG to..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who would use this?
+      multiple: true
+      options:
+        - Casual collectors
+        - Competitive players
+        - Traders / finance watchers
+        - Sellers (eBay, TCGplayer)
+        - Long-time EchoMTG users
+        - API / integration developers
+    validations:
+      required: false

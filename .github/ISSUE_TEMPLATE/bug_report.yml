@@ -1,0 +1,70 @@
+name: Bug report
+description: Something's not working right on EchoMTG
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. A few quick details will help us reproduce and fix it faster.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug. What were you trying to do? What went wrong?
+      placeholder: "I tried to add a card to my inventory and got an error..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: "I expected the card to be added to my collection."
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we see this ourselves?
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: URL where this happened
+      placeholder: "https://www.echomtg.com/..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser / device
+      options:
+        - Chrome (desktop)
+        - Safari (desktop)
+        - Firefox (desktop)
+        - Edge (desktop)
+        - Mobile Safari (iOS)
+        - Mobile Chrome (Android)
+        - Other
+        - Not sure
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag + drop or paste images. Optional but helps a lot.
+    validations:
+      required: false
